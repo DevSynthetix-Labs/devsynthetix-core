@@ -1,0 +1,9 @@
+{
+  "endpoint": "/api/status",
+  "method": "GET",
+  "description": "Returns current core system status",
+  "response": {
+    "service": "string",
+    "status": "string"
+  }
+}
