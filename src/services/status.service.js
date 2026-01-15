@@ -1,7 +1,11 @@
-import { statusService } from "../services/status.service.js";
-
-export function registerServices() {
-  return {
-    status: statusService
-  };
-}
+export const statusService = {
+  name: "core-status",
+  state: "active",
+  description: "Reports core system availability",
+  response() {
+    return {
+      service: "devsynthetix-core",
+      status: "operational"
+    };
+  }
+};
